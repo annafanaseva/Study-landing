@@ -39,6 +39,11 @@ body {
   margin-top: 120px;
 }
 
+.active{
+  background: var(--radical-red);
+  border-radius: 5px;
+}
+
 .left-sidebar-links ul {
   padding: 0;
   list-style: none;
@@ -47,7 +52,8 @@ body {
 .left-sidebar-links li {
   display: flex;
   align-items: center;
-  margin-top: 26px;
+  padding: 12px 24px;
+  margin-top: 10px;
 }
 
 .left-sidebar-links li img {
