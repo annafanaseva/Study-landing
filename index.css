@@ -12,6 +12,9 @@
   --radical-red: #ff3f58;
   --mine-shaft: #3c3939;
   --gray: #817E7F;
+  --yellow-orange: #FEA441;
+  --dodger-blue: #18B4F9;
+  --red-gradient: linear-gradient(#ff3f58, #E40C28);
 }
 
 body {
@@ -139,10 +142,17 @@ body {
 }
 
 .content-card {
+  position: relative;
   max-width: 250px;
   background: var(--cod-gray);
   padding: 20px 10px;
   border-radius: 10px;
+}
+
+.content-card-vector {
+  position: absolute;
+  top: 46px;
+  right: 16px;
 }
 
 .card-top {
@@ -329,7 +339,7 @@ body {
 .notice-board {
   display: flex;
   flex-direction: column;
-  max-width: 250px;
+  width: 100%;
   background: var(--cod-gray);
   padding: 20px 10px;
   border-radius: 10px;
@@ -460,6 +470,7 @@ body {
   background-color: var(--radical-red);
   border-radius: 10px;
   font-size: 12px;
+  cursor: pointer;
 }
 
 .schedule {
@@ -513,5 +524,52 @@ table {
   width: 100%;
 }
 
-tr{
+th {
+  padding: 12px !important;
+  text-align: center;
+  margin: 0 auto !important;
+}
+
+.date-gray-text {
+  color: var(--gray);
+}
+
+.date-yellow-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--yellow-orange);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.date-red-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--radical-red);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.date-red {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--red-gradient);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.date-blue-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--dodger-blue);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
 }
