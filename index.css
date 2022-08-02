@@ -343,6 +343,7 @@ body {
   background: var(--cod-gray);
   padding: 20px 10px;
   border-radius: 10px;
+  margin-left: 24px;
 }
 
 .notice-board-header {
@@ -499,7 +500,6 @@ body {
 .schedule-header-right p {
   margin: 0 10px;
   font-size: 14px;
-
 }
 
 .schedule-header-right img {
@@ -517,7 +517,7 @@ body {
 }
 
 .schedule-table {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 table {
@@ -572,4 +572,46 @@ th {
   width: 18px;
   height: 18px;
   border-radius: 50%;
+}
+
+@media (max-width: 1440px) {
+  body {
+    height: 100%;
+  }
+
+  .notice-board-card img {
+    display: none;
+  }
+
+  .notice-board-text {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1360px) {
+  .notice-board {
+    margin-left: 14px;
+  }
+
+  .content-graphic {
+    max-width: 770px;
+  }
+
+  .graphic img {
+    max-width: 670px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .notice-board {
+    display: none;
+  }
+
+  .content {
+    justify-content: center;
+  }
+
+  .content-graphic{
+    margin-top: 24px;
+  }
 }
